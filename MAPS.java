@@ -1,4 +1,3 @@
-package com.timbuchalka;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -35,3 +34,30 @@ public class MapProgram {
         }
     }
 }
+
+
+
+
+
+
+maps can pass in different objects  
+
+ Map<String, Integer> numbers = new HashMap<>();
+        numbers.put("one",1);
+        numbers.put("two",2);
+        System.out.println(numbers.get("one"));
+       // numbers.put("one",1);
+        if(numbers.containsKey("one")){
+            System.out.println("1 is already added to your dictionary");
+
+        }
+        else{
+
+            System.out.println("one is the first number");
+        }
+        for(String key :numbers.keySet()){
+            System.out.println(key + " : " + numbers.get(key));
+        }
+
+
+    }
